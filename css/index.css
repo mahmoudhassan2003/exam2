@@ -1,0 +1,175 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{scroll-behavior: smooth; }
+
+body{
+    background-color: #0D0D0D;
+    color: #f9f6f6 !important;
+    overflow: hidden;
+}
+
+.loader, .loader:before, .loader:after {
+    border-radius: 50%;
+    width: 2.5em;
+    height: 2.5em;
+    animation-fill-mode: both;
+    animation: bblFadInOut 1.8s infinite ease-in-out;
+  }
+  .loader {
+    color: #FFF;
+    font-size: 7px;
+    position: relative;
+    text-indent: -9999em;
+    transform: translateZ(0);
+    animation-delay: -0.16s;
+  }
+  .loader:before,
+  .loader:after {
+    content: '';
+    position: absolute;
+    top: 0;
+  }
+  .loader:before {
+    left: -3.5em;
+    animation-delay: -0.32s;
+  }
+  .loader:after {
+    left: 3.5em;
+  }
+  
+  @keyframes bblFadInOut {
+    0%, 80%, 100% { box-shadow: 0 2.5em 0 -1.3em }
+    40% { box-shadow: 0 2.5em 0 0 }
+  }
+      
+
+.nav{
+    background-color: #0D0D0D;
+}
+
+.logo{
+    width: 50px;
+}
+
+i{
+    cursor: pointer;
+}
+
+.meal-layer{
+    width: 100%;
+    height: 100%;
+    background-color: #f9f6f6ca;
+    top: 100%;
+    transition: .5s;
+}
+
+.meal:hover .meal-layer{
+    top: 0;
+}
+
+.SNav{
+    z-index: 99999;
+    left: -17%;
+}
+
+.cursor-pointer{
+    cursor: pointer;
+}
+
+.alert{
+    width: fit-content;
+}
+
+.loading-screen{
+    z-index: 999;
+    display: flex;
+}
+
+.loading-screen2{
+    position: absolute;
+    z-index: 9;
+    background-color: #0D0D0D;
+    display: flex;
+}
+ul{
+    list-style-type: none;
+}
+li:hover{
+    color: #f65302;
+}
+li{
+    transition: .5s;
+}
+
+
+.i-fixed{
+    position: absolute;
+    background-color: #856453;
+    color: black;
+    left: 5%;
+    z-index: 9999999999999999999999999999;
+    top: 50%;
+    font-size: xx-large;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.nav-tab{
+    background-color: #0D0D0D;
+    left: 0%;
+}
+
+
+
+
+
+.i-fixed{
+    position: absolute;
+    color: white; 
+    left: .5%; 
+    top: 50%;
+    font-size: xx-large;
+    cursor: pointer;
+    transition: 1s;
+}
+.nav{
+    position: fixed;
+    height: 100%;
+    width: 15%;
+    background-color: #202124;
+    color: white;
+    display: none;
+
+}
+.exitMarkks{
+    font-size: xx-large;
+    position: absolute;
+    right: 23px;
+    top: 20px;
+    cursor: pointer;
+    transition: .2222s;
+}
+
+.liDetl{
+    margin: 30% 0;
+    font-size: 30px;
+    transition: .2222s;
+    color: white;
+    text-decoration: none;
+}
+.exitMark,.opentMark:hover{
+    color: #856453;
+}
+.liDetl:hover{
+    color: #856453;
+}
+
+
+
+
+
+
+    
